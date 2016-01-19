@@ -1,0 +1,23 @@
+first update the help
+update-help
+
+after that enable scripting
+set-executionpolicy RemoteSigned
+
+now enable the remote accessing
+
+new-item -path $profile -force -type file
+
+start-process powershell -verb runas
+
+----------------------
+cmdlet structure
+----------------------
+verb-noun -parameter -arg
+some cmdlet structure for verb
+get
+set
+enable
+disable
+new
+remove
